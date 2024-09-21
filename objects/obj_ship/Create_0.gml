@@ -5,7 +5,6 @@ event_inherited();
 #macro TURN_SPEED_SLOW 2
 #macro ACCELERATION 0.05
 #macro EXPLOSION_SIZE 0.1
-#macro BULLET_SPEED 5
 #endregion
 
 #region Event Map
@@ -17,3 +16,5 @@ keyboard_set_map(ord("S"), vk_down);
 
 x = room_width / 2;
 y = room_height / 2;
+
+bulletSpeed = 6;

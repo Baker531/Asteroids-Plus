@@ -1,7 +1,7 @@
 #region global constants
 #macro none "none"
-#macro ASTEROID_INCREASE 20
-#macro REQUIRED_ASTEROIDS 29
+#macro ASTEROID_INCREASE 30
+#macro REQUIRED_ASTEROIDS 50
 #endregion
 #region global variables
 score = 0;
@@ -9,7 +9,7 @@ lives = 3;
 health = 100;
 global.level = 1;
 global.destroyed_asteroids = 0;
-global.total_asteroids = 1000;
+global.total_asteroids = 150;
 #endregion
 #region global toolkit
 function set_text_style(font, color) {

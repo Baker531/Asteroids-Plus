@@ -1,7 +1,7 @@
 #region global constants
 #macro none "none"
 #macro ASTEROID_INCREASE 30
-#macro REQUIRED_ASTEROIDS 50
+#macro REQUIRED_ASTEROIDS 30
 #endregion
 #region global variables
 score = 0;
@@ -22,13 +22,9 @@ function set_text_style(font, color) {
 #endregion
 #region global functions
 function spawn_asteroids() {
-	repeat(global.total_asteroids) {
-		var xx, yy;
-		do {
-			xx = irandom_range(0, room_width);
-			yy = irandom_range(0, room_height);
-		} until (point_distance(xx, yy, obj_ship.x, obj_ship.y) > 100)
-	    instance_create_layer(xx, yy, "Instances", obj_asteroid);
-	}
+	spawn_obj(obj_asteroid, global.total_asteroids, 200);
+	spawn_obj(obj_raider, 20, 200);
+	spawn_obj(obj_hunter, 15, 200);
+	spawn_obj(obj_brute, 10, 200);
 }
 #endregion

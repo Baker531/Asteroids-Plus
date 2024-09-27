@@ -2,7 +2,7 @@
 #region camera
 global.cameraX = 0;
 global.cameraY = 0;
-target = obj_ship;
+target = obj_par_ship;
 
 cameraWidth = 500;
 cameraHeight = 500;

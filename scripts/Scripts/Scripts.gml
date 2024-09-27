@@ -18,7 +18,7 @@ function spawn_obj(obj, num, radius) {
 		do {
 			xx = irandom_range(0, room_width);
 			yy = irandom_range(0, room_height);
-		} until (point_distance(xx, yy, obj_ship.x, obj_ship.y) > radius)
+		} until (point_distance(xx, yy, obj_par_ship.x, obj_par_ship.y) > radius)
 	    instance_create_layer(xx, yy, "Instances", obj);
 	}
 }

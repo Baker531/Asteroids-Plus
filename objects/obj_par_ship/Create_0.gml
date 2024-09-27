@@ -7,14 +7,13 @@ event_inherited();
 #macro EXPLOSION_SIZE 0.1
 #endregion
 
-#region Event Map
-keyboard_set_map(ord("A"), vk_left);
-keyboard_set_map(ord("D"), vk_right);
-keyboard_set_map(ord("W"), vk_up);
-keyboard_set_map(ord("S"), vk_down);
-#endregion
+key_l = vk_left
+key_r = vk_right;
+key_u = vk_up;
+key_d = vk_down;
+key_s = vk_space;
 
-x = room_width / 2;
-y = room_height / 2;
+hp = 100;
+damage = 100;
 
 bulletSpeed = 6;

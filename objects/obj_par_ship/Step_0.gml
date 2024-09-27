@@ -1,13 +1,13 @@
 #region controls
 var turning_speed = keyboard_check(vk_shift) ? TURN_SPEED_SLOW : TURN_SPEED;
 
-if (keyboard_check(vk_left)) {
+if (keyboard_check(key_l)) {
 	image_angle += turning_speed;
-} if (keyboard_check(vk_right)) {
+} if (keyboard_check(key_r)) {
 	image_angle -= turning_speed;
-} if (keyboard_check(vk_up)) {
+} if (keyboard_check(key_u)) {
 	motion_add(image_angle, ACCELERATION);
-} if (keyboard_check(vk_down)) {
+} if (keyboard_check(key_d)) {
 	motion_add(image_angle, -ACCELERATION);
 } 
 

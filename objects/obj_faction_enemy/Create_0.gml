@@ -1,2 +1,2 @@
 faction = factions.enemy;
-image_blend = c_red;
+image_blend = make_color_rgb(255, 100, 100);

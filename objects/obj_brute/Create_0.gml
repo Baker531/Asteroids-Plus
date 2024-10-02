@@ -8,5 +8,6 @@ hp = max_hp;
 shooting = false;
 
 fade = 0;
+returning = false;
 
 damage = 30;

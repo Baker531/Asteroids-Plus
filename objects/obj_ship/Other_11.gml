@@ -1,8 +1,9 @@
 /// @description Hit
 
+if (shield) exit;
+
 health -= other.damage;
 
-effect_create_above(ef_explosion, x, y, EXPLOSION_SIZE, c_white);
 instance_destroy(other)
 if (health <= 0) {
 	room_restart();
@@ -10,4 +11,7 @@ if (health <= 0) {
 	if (--lives <= 0) {
 		room_goto(rm_gameover);
 	}
+	debris(30, DEBRIS_SPEED, DEBRIS_SPEED_VARIANCE);
+} else {
+	debris(other.damage, DEBRIS_SPEED, DEBRIS_SPEED_VARIANCE);
 }

@@ -16,13 +16,13 @@ if (point_distance(x,y, obj_ship.x,obj_ship.y) < detectionRadius) {
 		speed += accel;
 	}
 	if (shooting) {
-		if (++bulletCounter >= 30) {
-			create_bullet();
+		if (++bulletCounter >= fireRate) {
+			create_bullet(image_angle, bulletSpeed, 0, sprite_height/2);
 			bulletCounter = 0;
 		}
 	}
 } else {
-	if (tracking) {
+	if (returning) {
 		image_angle = lerp(image_angle, direction, 0.05);
 	}
 	if (dodging || chasing) {

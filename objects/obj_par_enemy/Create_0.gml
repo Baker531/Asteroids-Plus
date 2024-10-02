@@ -13,12 +13,14 @@ max_hp = 10;
 hp = max_hp;
 
 shooting = true;
-bulletSpeed = 4;
+bulletSpeed = 5;
 bulletCounter = 0;
 fireRate = 30;
+bulletDamage = 10;
 
-following = true; // Move forward towards angle
+following = true; // Move forward along angle
 tracking = true; // Point towards player
+returning = true; // If not seeing player, return to old angle
 fade = 0.1; // Fade between
 
 dodging = false; // Slow down if very near player
@@ -29,9 +31,10 @@ decelRadius = 150; // How easily scared the ship is (minimum distance to ship)
 
 detectionRadius = 250;
 
+pwup_chance = 25;
 
 // Healthbar properties
-hb_y_off = 10;
-hb_width = 40;
+hb_y_off = 0;
+hb_width = 30;
 hb_height = 5;
 

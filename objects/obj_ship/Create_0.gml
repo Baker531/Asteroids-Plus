@@ -17,4 +17,10 @@ keyboard_set_map(ord("S"), vk_down);
 x = room_width / 2;
 y = room_height / 2;
 
-bulletSpeed = 6;
+bulletSpeed = 7;
+bulletDamage = 10;
+gun = -1;
+shield = false;
+damage = 1000;
+
+image_speed = 0;

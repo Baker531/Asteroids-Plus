@@ -12,7 +12,7 @@ if (keyboard_check(vk_left)) {
 } 
 
 if (keyboard_check_pressed(vk_space)) {
-	create_bullet()
+	shoot(bulletSpeed);
 }
 #endregion
 

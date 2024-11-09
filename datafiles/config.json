@@ -3,7 +3,7 @@
     "ships": [
         {
             "name": "Raider",
-            "frequency": 5,
+            "frequency": 20,
 
             "speed": 3,
             "damage": 20,
@@ -31,7 +31,7 @@
         },
         {
             "name": "Hunter",
-            "frequency": 5,
+            "frequency": 15,
 
             "speed": 3,
             "damage": 20,
@@ -58,7 +58,7 @@
         },
         {
             "name": "Brute",
-            "frequency": 5,
+            "frequency": 10,
 
             "speed": 3,
             "damage": 20,
@@ -82,7 +82,7 @@
         },
         {
             "name": "Gunner",
-            "frequency": 5,
+            "frequency": 12,
 
             "speed": 3,
             "damage": 20,

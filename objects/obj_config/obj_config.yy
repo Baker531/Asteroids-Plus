@@ -1,11 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_faction",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_config",
+  "eventList":[],
   "managed":true,
-  "name":"obj_faction",
+  "name":"obj_config",
   "overriddenProperties":[],
   "parent":{
     "name":"Utils",

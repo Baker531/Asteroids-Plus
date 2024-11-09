@@ -8,8 +8,8 @@ function create_bullet(dir, _speed) {
 	} if (argument_count > 4) {
 		obj = argument[4];
 	}
-	
-	var inst = instance_create_layer(x+lengthdir_x(xoff, dir-90)+lengthdir_x(yoff, dir), y+lengthdir_y(xoff, dir-90)+lengthdir_y(yoff, dir), "Instances", obj);
+	var off = offset(xoff, yoff, dir);
+	var inst = instance_create_layer(x+off[0], y+off[1], "Instances", obj);
 
 	inst.direction = dir;
 	if (obj == obj_bullet) inst.speed = _speed + speed;

@@ -11,6 +11,7 @@ objScore = 100;
 damage = 20;
 max_hp = 10;
 hp = max_hp;
+cameraShake = 4;
 
 shooting = true;
 bulletSpeed = 5;

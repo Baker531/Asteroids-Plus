@@ -2,15 +2,17 @@
 
 if (shield) exit;
 
-health -= other.damage;
+hp -= other.damage;
+
+if (other.id == obj_bullet) {
+	global.cameraShake = 2;	
+}
 
 instance_destroy(other)
-if (health <= 0) {
-	room_restart();
-	health = 100;
-	if (--lives <= 0) {
-		room_goto(rm_gameover);
-	}
+if (hp <= 0 && !dead) {
+	dead = true;
+	lives--;
+	alarm[2] = 2*target_fps;
 	debris(30, DEBRIS_SPEED, DEBRIS_SPEED_VARIANCE);
 } else {
 	debris(other.damage, DEBRIS_SPEED, DEBRIS_SPEED_VARIANCE);

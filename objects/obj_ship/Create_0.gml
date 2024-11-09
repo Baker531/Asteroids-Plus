@@ -23,4 +23,8 @@ gun = -1;
 shield = false;
 damage = 1000;
 
+max_hp = 100;
+hp = 100;
+dead = false;
+
 image_speed = 0;

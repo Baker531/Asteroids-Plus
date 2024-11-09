@@ -1,15 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_faction",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_par_ship",
+  "eventList":[],
   "managed":true,
-  "name":"obj_faction",
+  "name":"obj_par_ship",
   "overriddenProperties":[],
   "parent":{
-    "name":"Utils",
-    "path":"folders/Objects/Utils.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

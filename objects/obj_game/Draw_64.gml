@@ -4,23 +4,21 @@ switch(room) {
 	
 	
 case rm_game:
-	set_text_style(fnt_hud, c_white, fa_left)
+	set_text_style(fnt_hud, c_white, fa_left);
 	draw_text(20, 20, "SCORE: " + string(score));
 	draw_text(20, 40, "LIVES: " + string(lives));
-	
+	var _health = (obj_ship.hp/obj_ship.max_hp)*100;
+	show_debug_message(_health)
 	draw_healthbar(
-180, 20, 320, 30, health, c_white, c_red, c_lime, 0, true, false);
+		180, 20, 320, 30, _health,
+		c_white, c_red, c_lime, 0, true, false
+	);
 
 	draw_set_halign(fa_right);
 	draw_text(480, 20, "DEST: " + string(global.destroyed_asteroids));
 	draw_text(480, 40, "LEVEL: " + string(global.level))
-	
-
-
-
-
-
 	break;
+	
 case rm_start:
 	set_text_style(fnt_head, c_yellow, fa_center);
     draw_text(room_width / 2, 30, "ASTEROIDS");

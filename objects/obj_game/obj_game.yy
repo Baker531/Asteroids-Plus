@@ -11,8 +11,8 @@
   "name":"obj_game",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Utils",
+    "path":"folders/Objects/Utils.yy",
   },
   "parentObjectId":null,
   "persistent":true,

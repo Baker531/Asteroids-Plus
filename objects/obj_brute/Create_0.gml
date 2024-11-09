@@ -11,3 +11,5 @@ fade = 0;
 returning = false;
 
 damage = 30;
+
+cameraShake = 5;

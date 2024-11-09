@@ -11,7 +11,6 @@
 #region global variables
 score = 0;
 lives = 3;
-health = 100;
 global.level = 1;
 global.destroyed_asteroids = 0;
 global.total_asteroids = 150;

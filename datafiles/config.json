@@ -1,0 +1,1 @@
+{"ships":[{"name":"Punisher","speed":3,"damage":10,"firerate":70,"health":20,"frequency":5},{"name":"Destroyer","speed":2,"damage":20,"firerate":50,"health":50,"frequency":2}],"totalShips":20}

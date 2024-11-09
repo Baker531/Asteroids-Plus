@@ -17,3 +17,7 @@ function offsetY(xoff, yoff, dir) {
 function offset(xoff, yoff, dir) {
 	return [offsetX(xoff, yoff, dir), offsetY(xoff, yoff, dir)]
 }
+
+function array_choose(arr) {
+	return arr[irandom_range(0, array_length(arr) - 1)]
+}

@@ -31,10 +31,7 @@ function set_text_style(font, color) {
 function spawn_objects() {
 	spawn_obj(obj_asteroid, global.total_asteroids, 200);
 	
-	spawn_obj(obj_raider, 20, 200);
-	spawn_obj(obj_hunter, 15, 200);
-	spawn_obj(obj_gunner, 12, 500);
-	spawn_obj(obj_brute, 10, 200);
+	spawn_obj(obj_par_enemy, global.config.totalShips, 200);
 	
 }
 #endregion

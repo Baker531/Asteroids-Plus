@@ -107,7 +107,35 @@
             "decel": 0.05,
             "accel": 0.02,
             "decelRadius": 150
+        },
+        {
+            "name": "Tank",
+            "frequency": 8,
+
+            "speed": 2,
+            "damage": 20,
+            "health": 100,
+            "cameraShake": 6,
+            "score": 500,
+
+            "shooting": true,
+            "fireRate": 50,
+            "bulletDamage": 20,
+            "bulletSpeed": 10,
+
+            "following": true,
+            "tracking": true,
+            "returning": false,
+            "fade": 0.1,
+            "detectionRadius": 250,
+
+            "dodging": false,
+            "chasing": false,
+            "decel": 0.05,
+            "accel": 0.02,
+            "decelRadius": 150
         }
+
     ],
-    "totalShips": 20
+    "totalShips": 50
 }

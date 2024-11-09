@@ -3,7 +3,7 @@ show_debug_log(true);
 
 var path, file, json;
 
-path = working_directory + "config.json"; 
+path = working_directory + "config-min.json"; 
 if (file_exists(path)) {
 	file = file_text_open_read(path);
 } else { 

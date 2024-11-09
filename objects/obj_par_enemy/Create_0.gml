@@ -1,28 +1,30 @@
 event_inherited();
 
-type = global.weighted_ships[
-    irandom_range(0, array_length(global.weighted_ships) - 1)
-];
+type = array_choose(global.weighted_ships);
 ship = global.config.ships[type];
+image_index = type;
+image_speed = 0;
 
 speed = ship.speed;
 direction = irandom_range(0, 359);
 image_angle = direction;
 
-// initialSpeed = 1.5;
+initialSpeed = ship.speed;
 
 // objScore = 100;
 
 // damage = 20;
 // max_hp = 10;
-// hp = max_hp;
+max_hp = ship.health;
+hp = max_hp;
 // cameraShake = 4;
 
 // shooting = true;
 // bulletSpeed = 5;
-// bulletCounter = 0;
+bulletCounter = 0;
 // fireRate = 30;
-// bulletDamage = 10;
+if (ship.shooting) bulletDamage = ship.bulletDamage;
+damage = ship.damage;
 
 // following = true; // Move forward along angle
 // tracking = true; // Point towards player

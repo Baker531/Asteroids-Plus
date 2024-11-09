@@ -13,8 +13,8 @@
   "name":"obj_par_enemy",
   "overriddenProperties":[],
   "parent":{
-    "name":"Enemy",
-    "path":"folders/Objects/Enemy.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":{
     "name":"obj_faction_enemy",
@@ -37,7 +37,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_enemy",
+    "path":"sprites/spr_enemy/spr_enemy.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

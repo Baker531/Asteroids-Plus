@@ -1,1 +1,113 @@
-{"ships":[{"name":"Punisher","speed":3,"damage":10,"firerate":70,"health":20,"frequency":5},{"name":"Destroyer","speed":2,"damage":20,"firerate":50,"health":50,"frequency":2}],"totalShips":20}
+{
+    "//1": "Raider is a good template to start with",
+    "ships": [
+        {
+            "name": "Raider",
+            "frequency": 5,
+
+            "speed": 3,
+            "damage": 20,
+            "health": 10,
+            "cameraShake": 4,
+
+            "shooting": true,
+            "fireRate": 30,
+            "bulletDamage": 10,
+            "bulletSpeed": 5,
+
+            "score": 100,
+
+            "following": false,
+            "tracking": true,
+            "returning": true,
+            "fade": 0.1,
+            "detectionRadius": 250,
+
+            "dodging": false,
+            "chasing": false,
+            "decel": 0.05,
+            "accel": 0.02,
+            "decelRadius": 150
+        },
+        {
+            "name": "Hunter",
+            "frequency": 5,
+
+            "speed": 3,
+            "damage": 20,
+            "cameraShake": 4,
+            "health": 10,
+            "score": 200,
+
+            "shooting": true,
+            "fireRate": 30,
+            "bulletDamage": 10,
+            "bulletSpeed": 12,
+
+            "following": true,
+            "tracking": true,
+            "returning": false,
+            "fade": 0.1,
+            "detectionRadius": 250,
+
+            "dodging": true,
+            "chasing": true,
+            "decel": 0.05,
+            "accel": 0.02,
+            "decelRadius": 150
+        },
+        {
+            "name": "Brute",
+            "frequency": 5,
+
+            "speed": 3,
+            "damage": 20,
+            "health": 50,
+            "cameraShake": 5,
+            "score": 300,
+
+            "shooting": false,
+
+            "following": true,
+            "tracking": true,
+            "returning": false,
+            "fade": 0.1,
+            "detectionRadius": 250,
+
+            "dodging": false,
+            "chasing": false,
+            "decel": 0.05,
+            "accel": 0.02,
+            "decelRadius": 150
+        },
+        {
+            "name": "Gunner",
+            "frequency": 5,
+
+            "speed": 3,
+            "damage": 20,
+            "health": 20,
+            "cameraShake": 4,
+
+            "shooting": true,
+            "fireRate": 10,
+            "bulletDamage": 5,
+            "bulletSpeed": 15,
+
+            "score": 100,
+
+            "following": true,
+            "tracking": true,
+            "returning": true,
+            "fade": 0.1,
+            "detectionRadius": 250,
+
+            "dodging": false,
+            "chasing": false,
+            "decel": 0.05,
+            "accel": 0.02,
+            "decelRadius": 150
+        }
+    ],
+    "totalShips": 20
+}

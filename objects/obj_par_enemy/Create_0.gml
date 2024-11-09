@@ -1,8 +1,11 @@
 event_inherited();
 
+type = global.weighted_ships[
+    irandom_range(0, array_length(global.weighted_ships) - 1)
+];
+ship = global.config.ships[type];
 
-
-speed = initialSpeed;
+speed = ship.speed;
 direction = irandom_range(0, 359);
 image_angle = direction;
 

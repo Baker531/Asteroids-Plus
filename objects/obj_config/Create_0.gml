@@ -1,5 +1,4 @@
 #region Load config
-show_debug_log(true);
 
 var path, file, json;
 
@@ -27,6 +26,5 @@ for (i=0; i < array_length(ships); i++) {
 
 global.weighted_ships = ws
 show_debug_message(ws)
-
 
 #endregion

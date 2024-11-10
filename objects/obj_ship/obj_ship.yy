@@ -16,8 +16,8 @@
   "name":"obj_ship",
   "overriddenProperties":[],
   "parent":{
-    "name":"Ally",
-    "path":"folders/Objects/Ally.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":{
     "name":"obj_faction_ally",

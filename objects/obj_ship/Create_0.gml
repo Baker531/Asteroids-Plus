@@ -24,7 +24,8 @@ shield = false;
 damage = 1000;
 
 max_hp = 100;
-hp = 100;
+if (health > 0) hp = health;
+else hp = max_hp;
 dead = false;
 
 image_speed = 0;

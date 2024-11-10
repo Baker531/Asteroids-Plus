@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function debris(number, debris_speed, debris_variance){
 	repeat(number) {
-		inst = instance_create_layer(x, y, "Instances", obj_debris);
+		var inst = instance_create_layer(x, y, "Instances", obj_debris);
 		inst.speed = random_range(debris_speed-debris_variance, debris_speed+debris_variance)
 		inst.image_blend = image_blend;
 	}

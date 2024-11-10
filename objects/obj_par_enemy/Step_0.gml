@@ -10,8 +10,8 @@ if (point_distance(x,y, obj_ship.x,obj_ship.y) < ship.detectionRadius) {
 		direction = image_angle;	
 	}
 	if (near_obj(obj_ship, ship.decelRadius)) {
-		if (ship.dodging) speed -= ship.decel;
-	} else if (ship.chasing) {
+		speed -= ship.decel;
+	} else {
 		speed += ship.accel;
 	}
 	if (ship.shooting) {
@@ -24,7 +24,7 @@ if (point_distance(x,y, obj_ship.x,obj_ship.y) < ship.detectionRadius) {
 	if (ship.returning) {
 		image_angle = lerp(image_angle, direction, 0.05);
 	}
-	if (ship.dodging || ship.chasing) {
+	if (ship.decel > 0 || ship.accel > 0) {
 		speed = lerp(speed, initialSpeed, 0.1);	
 	}
 }

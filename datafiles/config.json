@@ -23,11 +23,9 @@
             "fade": 0.1,
             "detectionRadius": 250,
 
-            "dodging": false,
-            "chasing": false,
-            "decel": 0.05,
-            "accel": 0.02,
-            "decelRadius": 150
+            "decel": 0,
+            "accel": 0,
+            "decelRadius": 0
         },
         {
             "name": "Hunter",
@@ -50,8 +48,6 @@
             "fade": 0.1,
             "detectionRadius": 250,
 
-            "dodging": true,
-            "chasing": true,
             "decel": 0.05,
             "accel": 0.02,
             "decelRadius": 150
@@ -74,11 +70,9 @@
             "fade": 0.1,
             "detectionRadius": 250,
 
-            "dodging": false,
-            "chasing": false,
-            "decel": 0.05,
-            "accel": 0.02,
-            "decelRadius": 150
+            "decel": 0,
+            "accel": 0,
+            "decelRadius": 0
         },
         {
             "name": "Gunner",
@@ -102,11 +96,9 @@
             "fade": 0.1,
             "detectionRadius": 250,
 
-            "dodging": false,
-            "chasing": false,
-            "decel": 0.05,
-            "accel": 0.02,
-            "decelRadius": 150
+            "decel": 0,
+            "accel": 0,
+            "decelRadius": 0
         },
         {
             "name": "Tank",
@@ -129,11 +121,9 @@
             "fade": 0.1,
             "detectionRadius": 250,
 
-            "dodging": false,
-            "chasing": false,
-            "decel": 0.05,
-            "accel": 0.02,
-            "decelRadius": 150
+            "decel": 0,
+            "accel": 0,
+            "decelRadius": 0
         }
 
     ],

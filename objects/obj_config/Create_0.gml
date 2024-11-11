@@ -18,8 +18,8 @@ show_debug_message(global.config);
 #region Calculate ship chances
 var ws = [];
 var ships = global.config.ships;
-for (i=0; i < array_length(ships); i++) { 
-    for (j=0; j < ships[i].frequency; j++) { 
+for (var i=0; i < array_length(ships); i++) { 
+    for (var j=0; j < ships[i].frequency; j++) { 
         array_push(ws, i);
     }  
 }

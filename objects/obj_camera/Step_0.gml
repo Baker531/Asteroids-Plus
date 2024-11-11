@@ -1,18 +1,18 @@
 #region follow target
 if (instance_exists(target)) {
-	global.cameraX = target.x - cameraWidth/2;
-	global.cameraY = target.y - cameraHeight/2;
-	
-	global.cameraX = clamp(global.cameraX, 0, room_width-cameraWidth);
-	global.cameraY = clamp(global.cameraY, 0, room_height-cameraHeight);
+    global.cameraX = target.x - cameraWidth/2;
+    global.cameraY = target.y - cameraHeight/2;
+    
+    global.cameraX = clamp(global.cameraX, 0, room_width-cameraWidth);
+    global.cameraY = clamp(global.cameraY, 0, room_height-cameraHeight);
 }
 
 global.cameraX += random_range(0-global.cameraShake, global.cameraShake);
 global.cameraY += random_range(-global.cameraShake, global.cameraShake);
 
 if (global.cameraShake > 0) {
-	global.cameraShake -= 0.2;
-	if (global.cameraShake < 0) global.cameraShake = 0;
+    global.cameraShake -= 0.2;
+    if (global.cameraShake < 0) global.cameraShake = 0;
 }
 
 camera_set_view_pos(view_camera[0], global.cameraX, global.cameraY);

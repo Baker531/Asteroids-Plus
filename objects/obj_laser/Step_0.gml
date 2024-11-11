@@ -1,6 +1,6 @@
 if (!instance_exists(creator)) {
-	instance_destroy();
-	exit;
+    instance_destroy();
+    exit;
 }
 
 direction = creator.image_angle;

@@ -1,3 +1,3 @@
-if (room == rm_game) {	
-	spawn_objects();
+if (room == rm_game) {    
+    spawn_objects();
 }

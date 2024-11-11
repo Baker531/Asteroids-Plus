@@ -18,37 +18,37 @@ global.total_asteroids = 150;
 
 #region global toolkit
 function set_text_style(font, color) {
-	draw_set_font(font);
-	draw_set_color(color);
-	if (argument_count == 3) {
-		draw_set_halign(argument[2])
-	}
+    draw_set_font(font);
+    draw_set_color(color);
+    if (argument_count == 3) {
+        draw_set_halign(argument[2])
+    }
 }
 
 #endregion
 
 #region global functions
 function spawn_objects() {
-	spawn_obj(obj_asteroid, global.total_asteroids, 200);
-	
-	spawn_obj(obj_par_enemy, global.config.totalShips, 200);
-	
+    spawn_obj(obj_asteroid, global.total_asteroids, 200);
+    
+    spawn_obj(obj_par_enemy, global.config.totalShips, 200);
+    
 }
 #endregion
 
 #region enums
 enum factions {
-	enemy,
-	ally,
-	neutral
+    enemy,
+    ally,
+    neutral
 }
 enum pwup {
-	two,
-	three,
-	four,
-	eight,
-	laser,
-	shield
+    two,
+    three,
+    four,
+    eight,
+    laser,
+    shield
 }
 #endregion
 

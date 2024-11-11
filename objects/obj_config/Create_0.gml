@@ -4,9 +4,9 @@ var path, file, json;
 
 path = working_directory + "config-min.json"; 
 if (file_exists(path)) {
-	file = file_text_open_read(path);
+    file = file_text_open_read(path);
 } else { 
-	show_error("Config file does not exist", true);
+    show_error("Config file does not exist", true);
 }
 json = file_text_read_string(file);
 show_debug_message("}{}}||}}{}|{||}{{||{|}")

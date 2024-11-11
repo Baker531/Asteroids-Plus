@@ -8,14 +8,14 @@ event_inherited();
 sprite_index = choose(spr_asteroid_small, spr_asteroid_med, spr_asteroid_big);
 switch(sprite_index) {
 case spr_asteroid_small:
-	damage = 10;
-	break;
+    damage = 10;
+    break;
 case spr_asteroid_med:
-	damage = 15;
-	break;
+    damage = 15;
+    break;
 case spr_asteroid_big:
-	damage = 20;
-	break;
+    damage = 20;
+    break;
 }
 direction = irandom_range(0, 359);
 speed = SPEED;

@@ -8,7 +8,6 @@ case rm_game:
     draw_text(20, 20, "SCORE: " + string(score));
     draw_text(20, 40, "LIVES: " + string(lives));
     var _health = (obj_ship.hp/obj_ship.max_hp)*100;
-    show_debug_message(_health)
     draw_healthbar(
         180, 20, 320, 30, _health,
         c_white, c_red, c_lime, 0, true, false

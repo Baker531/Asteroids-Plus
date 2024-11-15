@@ -10,6 +10,7 @@
 
 #region global variables
 score = 0;
+global.levelScore = 0;
 lives = 3;
 global.level = 1;
 global.destroyed_asteroids = 0;

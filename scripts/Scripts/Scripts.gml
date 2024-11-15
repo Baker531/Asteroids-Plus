@@ -24,3 +24,31 @@ function near_obj(obj, radius) {
 function draw_overlay(sprite, subsprite, color, alpha) {
     draw_sprite_ext(sprite, subsprite, x, y, image_xscale, image_yscale, image_angle, color, alpha)
 }
+function checkNextLevel() {
+    if (global.levelScore >= global.scoreRequired) {
+        show_debug_message(global.scoreRequired)
+        nextLevel()
+    }
+}
+
+function nextLevel() {
+    global.level++;
+    global.levelScore = 0;
+    global.destroyed_asteroids = 0;
+    global.total_asteroids += ASTEROID_INCREASE;
+    global.scoreRequired += global.config.scoreRequiredChange;
+    health = obj_ship.hp;
+    room_restart();
+}
+
+function resetLevel() {
+    health = 100;
+    global.destroyed_asteroids = 0;
+    room_restart();
+}
+
+function increaseScore(by) {
+    global.levelScore += by;
+    score += by;
+    checkNextLevel();
+}

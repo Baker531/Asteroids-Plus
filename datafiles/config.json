@@ -127,5 +127,9 @@
         }
 
     ],
-    "totalShips": 50
+
+    "totalShips": 50,
+
+    "scoreRequired": 1000,
+    "scoreRequiredChange": 200
 }

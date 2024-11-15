@@ -28,3 +28,6 @@ global.weighted_ships = ws
 show_debug_message(ws)
 
 #endregion
+
+global.scoreRequired = global.config.scoreRequired;
+show_debug_message(global.scoreRequired)

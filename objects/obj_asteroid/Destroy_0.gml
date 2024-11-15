@@ -1,4 +1,4 @@
-score += 50;
+increaseScore(50);
 global.destroyed_asteroids++;
 
 if (sprite_index == spr_asteroid_big) {
@@ -14,19 +14,11 @@ if (sprite_index == spr_asteroid_big) {
         new_asteroid.sprite_index = spr_asteroid_small;
     }
 } else {
-    global.cameraShake = 2;    
+    global.cameraShake = 2;
 }
 
 debris(20, DEBRIS_SPEED, DEBRIS_SPEED_VARIANCE);
 
 if (chance(10)) {
     instance_create_layer(x, y, "Instances", obj_powerup);    
-}
-
-if (global.destroyed_asteroids >= REQUIRED_ASTEROIDS + 1) {
-    global.level++;
-    global.destroyed_asteroids = 0;
-    global.total_asteroids += ASTEROID_INCREASE;
-    health = obj_ship.hp;
-    room_restart();
 }

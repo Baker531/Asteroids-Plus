@@ -29,3 +29,7 @@ else hp = max_hp;
 dead = false;
 
 image_speed = 0;
+
+debris(2, DEBRIS_SPEED, DEBRIS_SPEED_VARIANCE);
+
+show_debug_overlay()

@@ -1,6 +1,11 @@
 move_wrap(true, true, sprite_width/2)
 
-if (dead) exit;
+if (dead) {
+
+    debris(2, DEBRIS_SPEED, DEBRIS_SPEED_VARIANCE);
+    global.cameraShake = random_range(3, 5);
+    exit;
+};
 
 #region controls
 var turning_speed = keyboard_check(vk_shift) ? TURN_SPEED_SLOW : TURN_SPEED;

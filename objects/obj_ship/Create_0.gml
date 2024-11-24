@@ -19,6 +19,9 @@ y = room_height / 2;
 
 bulletSpeed = 7;
 bulletDamage = 10;
+bulletCounter = 0;
+bulletDelay = global.config.firingDelay;
+firingMode = global.config.firingMode;
 gun = -1;
 shield = false;
 damage = 1000;

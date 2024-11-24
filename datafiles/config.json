@@ -131,5 +131,8 @@
     "totalShips": 50,
 
     "scoreRequired": 1000,
-    "scoreRequiredChange": 200
+    "scoreRequiredChange": 200,
+
+    "firingMode": "auto",
+    "firingDelay": 10
 }

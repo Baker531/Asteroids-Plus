@@ -22,10 +22,15 @@ if (keyboard_check(vk_left)) {
     motion_add(image_angle, -ACCELERATION);
 } 
 bulletCounter++;
-
-if (keyboard_check(vk_space) && bulletCounter > bulletDelay) {
-    shoot(bulletSpeed);
-    bulletCounter = 0;
+if (firingMode == "auto") {
+    if (keyboard_check(vk_space) && bulletCounter > bulletDelay) {
+        shoot(bulletSpeed);
+        bulletCounter = 0;
+    }
+} else if (firingMode == "manual") {
+    if (keyboard_check_pressed(vk_space)) {
+        shoot(bulletSpeed);
+    }
 }
 #endregion
 

@@ -21,6 +21,7 @@ bulletSpeed = 7;
 bulletDamage = 10;
 bulletCounter = 0;
 bulletDelay = 10;
+firingMode = "constant";
 gun = -1;
 shield = false;
 damage = 1000;

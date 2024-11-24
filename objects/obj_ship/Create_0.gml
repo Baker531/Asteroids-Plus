@@ -19,6 +19,8 @@ y = room_height / 2;
 
 bulletSpeed = 7;
 bulletDamage = 10;
+bulletCounter = 0;
+bulletDelay = 10;
 gun = -1;
 shield = false;
 damage = 1000;

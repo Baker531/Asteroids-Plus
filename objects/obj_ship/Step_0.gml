@@ -21,9 +21,11 @@ if (keyboard_check(vk_left)) {
 } if (keyboard_check(vk_down)) {
     motion_add(image_angle, -ACCELERATION);
 } 
+bulletCounter++;
 
-if (keyboard_check_pressed(vk_space)) {
+if (keyboard_check(vk_space) && bulletCounter > bulletDelay) {
     shoot(bulletSpeed);
+    bulletCounter = 0;
 }
 #endregion
 

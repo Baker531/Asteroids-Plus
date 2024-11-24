@@ -6,7 +6,8 @@ switch(room) {
 case rm_game:
     set_text_style(fnt_hud, c_white, fa_left);
     draw_text(20, 20, "SCORE: " + string(score));
-    draw_text(20, 40, "LIVES: " + string(lives));
+    draw_text(20, 40, "LEFT: " + string(global.scoreRequired-global.levelScore));
+    
     var _health = (obj_ship.hp/obj_ship.max_hp)*100;
     draw_healthbar(
         180, 20, 320, 30, _health,
@@ -14,7 +15,7 @@ case rm_game:
     );
 
     draw_set_halign(fa_right);
-    draw_text(480, 20, "DEST: " + string(global.destroyed_asteroids));
+    draw_text(480, 20, "LIVES: " + string(lives));
     draw_text(480, 40, "LEVEL: " + string(global.level))
     break;
     

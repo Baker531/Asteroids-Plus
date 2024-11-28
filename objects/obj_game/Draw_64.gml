@@ -6,7 +6,7 @@ switch(room) {
 case rm_game:
     set_text_style(fnt_hud, c_white, fa_left);
     draw_text(20, 20, "SCORE: " + string(score));
-    draw_text(20, 40, "LEFT: " + string(global.scoreRequired-global.levelScore));
+    draw_text(20, 40, "LEFT: " + string(max(global.scoreRequired-global.levelScore, 0)));
     
     var _health = (obj_ship.hp/obj_ship.max_hp)*100;
     draw_healthbar(

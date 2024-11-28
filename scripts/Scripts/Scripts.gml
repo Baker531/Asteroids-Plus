@@ -25,10 +25,10 @@ function draw_overlay(sprite, subsprite, color, alpha) {
     draw_sprite_ext(sprite, subsprite, x, y, image_xscale, image_yscale, image_angle, color, alpha)
 }
 function checkNextLevel() {
-    if (global.levelScore >= global.scoreRequired) {
-        show_debug_message(global.scoreRequired);
+    if (global.levelScore >= global.scoreRequired && !global.nextLevel) {
+        show_debug_message(obj_alarms);
         global.nextLevel = true;
-        with (obj_alarms) alarm[0] = 120;
+        with (obj_alarms) {alarm[0] = 120};
     }
 }
 

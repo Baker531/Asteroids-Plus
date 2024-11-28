@@ -15,6 +15,7 @@ lives = 3;
 global.level = 1;
 global.destroyed_asteroids = 0;
 global.total_asteroids = 150;
+global.nextLevel = false;
 #endregion
 
 #region global toolkit

@@ -32,7 +32,9 @@ case rm_start:
     
     set_text_style(fnt_main, c_white);
     draw_text(room_width / 2, 80, 
-    @"Destroy 30 asteroids to win the level!
+    @"Get 1000 points to win the level!
+    Each level, the required points goes up by 200.
+    AIM: Destroy as many enemies and asteroids as you can.
     
     If you're hit, you lose:
     10 health for small asteroid
@@ -46,7 +48,6 @@ case rm_start:
     UP: accelerate
     DOWN: reverse
     LEFT/RIGHT: turn
-    CMD or ALT: slow turn
     SPACE: shoot
     
     >>PRESS ENTER TO START<<");

@@ -26,8 +26,9 @@
   "ResourceOrderSettings":[
     {"name":"fnt_head","order":1,"path":"fonts/fnt_head/fnt_head.yy",},
     {"name":"fnt_hud","order":2,"path":"fonts/fnt_hud/fnt_hud.yy",},
+    {"name":"obj_alarms","order":4,"path":"objects/obj_alarms/obj_alarms.yy",},
     {"name":"obj_camera","order":1,"path":"objects/obj_camera/obj_camera.yy",},
-    {"name":"obj_config","order":4,"path":"objects/obj_config/obj_config.yy",},
+    {"name":"obj_config","order":3,"path":"objects/obj_config/obj_config.yy",},
     {"name":"obj_debris","order":1,"path":"objects/obj_debris/obj_debris.yy",},
     {"name":"obj_faction_ally","order":1,"path":"objects/obj_faction_ally/obj_faction_ally.yy",},
     {"name":"obj_faction_neutral","order":1,"path":"objects/obj_faction_neutral/obj_faction_neutral.yy",},

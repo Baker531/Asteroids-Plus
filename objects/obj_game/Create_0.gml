@@ -15,6 +15,9 @@ lives = 3;
 global.level = 1;
 global.destroyed_asteroids = 0;
 global.total_asteroids = 150;
+global.levelDisplay = false;
+textDuration = 120;
+nextLevelAlpha = 1;
 #endregion
 
 #region global toolkit
@@ -54,3 +57,5 @@ enum pwup {
 #endregion
 
 randomize()
+
+displayLevel()

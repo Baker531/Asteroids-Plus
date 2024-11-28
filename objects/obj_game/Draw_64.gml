@@ -6,7 +6,7 @@ switch(room) {
 case rm_game:
     set_text_style(fnt_hud, c_white, fa_left);
     draw_text(20, 20, "SCORE: " + string(score));
-    draw_text(20, 40, "LEFT: " + string(global.scoreRequired-global.levelScore));
+    draw_text(20, 40, "LEFT: " + string(max(global.scoreRequired-global.levelScore, 0)));
     
     var _health = (obj_ship.hp/obj_ship.max_hp)*100;
     draw_healthbar(
@@ -17,6 +17,13 @@ case rm_game:
     draw_set_halign(fa_right);
     draw_text(480, 20, "LIVES: " + string(lives));
     draw_text(480, 40, "LEVEL: " + string(global.level))
+    if (global.levelDisplay) {
+        set_text_style(fnt_main, c_white, fa_center)
+        nextLevelAlpha -= 1/textDuration
+        draw_set_alpha(nextLevelAlpha)
+        draw_text(display_get_gui_width()/2, display_get_gui_height()/2 - 13, "LEVEL " + string(global.level))
+        draw_set_alpha(1);
+    }
     break;
     
 case rm_start:

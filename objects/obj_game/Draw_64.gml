@@ -21,7 +21,7 @@ case rm_game:
         set_text_style(fnt_main, c_white, fa_center)
         nextLevelAlpha -= 1/textDuration
         draw_set_alpha(nextLevelAlpha)
-        draw_text(display_get_gui_width()/2, display_get_gui_height()/2, "LEVEL " + string(global.level))
+        draw_text(display_get_gui_width()/2, display_get_gui_height()/2 - 13, "LEVEL " + string(global.level))
         draw_set_alpha(1);
     }
     break;

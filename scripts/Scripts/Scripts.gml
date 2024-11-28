@@ -25,10 +25,9 @@ function draw_overlay(sprite, subsprite, color, alpha) {
     draw_sprite_ext(sprite, subsprite, x, y, image_xscale, image_yscale, image_angle, color, alpha)
 }
 function checkNextLevel() {
-    if (global.levelScore >= global.scoreRequired && !global.nextLevel) {
+    if (global.levelScore >= global.scoreRequired) {
         show_debug_message(obj_alarms);
-        global.nextLevel = true;
-        with (obj_alarms) {alarm[0] = obj_game.levelWait};
+        nextLevel();
     }
 }
 
@@ -38,8 +37,9 @@ function nextLevel() {
     global.destroyed_asteroids = 0;
     global.total_asteroids += ASTEROID_INCREASE;
     global.scoreRequired += global.config.scoreRequiredChange;
-    global.nextLevel = false;
+    global.levelDisplay = false;
     health = obj_ship.hp;
+    displayLevel();
     room_restart();
 }
 
@@ -53,4 +53,9 @@ function increaseScore(by) {
     global.levelScore += by;
     score += by;
     checkNextLevel();
+}
+
+function displayLevel() {
+    global.levelDisplay = true;
+    with (obj_alarms) alarm[0] = obj_game.textDuration;
 }

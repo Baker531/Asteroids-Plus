@@ -1,3 +1,4 @@
 /// @description Game over
 
-nextLevel()
+levelDisplay = false;
+obj_game.nextLevelAlpha = 1;

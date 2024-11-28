@@ -28,7 +28,7 @@ function checkNextLevel() {
     if (global.levelScore >= global.scoreRequired && !global.nextLevel) {
         show_debug_message(obj_alarms);
         global.nextLevel = true;
-        with (obj_alarms) {alarm[0] = 120};
+        with (obj_alarms) {alarm[0] = obj_game.levelWait};
     }
 }
 

@@ -16,6 +16,8 @@ global.level = 1;
 global.destroyed_asteroids = 0;
 global.total_asteroids = 150;
 global.nextLevel = false;
+levelWait = 120;
+nextLevelAlpha = 1;
 #endregion
 
 #region global toolkit

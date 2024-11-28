@@ -17,6 +17,12 @@ case rm_game:
     draw_set_halign(fa_right);
     draw_text(480, 20, "LIVES: " + string(lives));
     draw_text(480, 40, "LEVEL: " + string(global.level))
+    if (global.nextLevel) {
+        set_text_style(fnt_main, c_white, fa_center)
+        nextLevelAlpha += 1/levelWait
+        draw_set_alpha(nextLevelAlpha)
+        draw_text(display_get_gui_width()/2, display_get_gui_height()/2, "LEVEL " + string(global.level + 1))
+    }
     break;
     
 case rm_start:

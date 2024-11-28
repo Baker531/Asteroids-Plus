@@ -26,8 +26,9 @@ function draw_overlay(sprite, subsprite, color, alpha) {
 }
 function checkNextLevel() {
     if (global.levelScore >= global.scoreRequired) {
-        show_debug_message(global.scoreRequired)
-        nextLevel()
+        show_debug_message(global.scoreRequired);
+        global.nextLevel = true;
+        with (obj_alarms) alarm[0] = 120;
     }
 }
 
@@ -37,6 +38,7 @@ function nextLevel() {
     global.destroyed_asteroids = 0;
     global.total_asteroids += ASTEROID_INCREASE;
     global.scoreRequired += global.config.scoreRequiredChange;
+    global.nextLevel = false;
     health = obj_ship.hp;
     room_restart();
 }

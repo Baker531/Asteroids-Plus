@@ -33,24 +33,24 @@ case rm_start:
     set_text_style(fnt_main, c_white);
     draw_text(room_width / 2, 80, 
     @"Get 1000 points to win the level!
-    Each level, the required points goes up by 200.
-    AIM: Destroy as many enemies and asteroids as you can.
+Each level, the required points goes up by 200.
+AIM: Destroy as many enemies and asteroids as you can.
     
-    If you're hit, you lose:
-    10 health for small asteroid
-    15 health for medium asteroid
-    20 health for large asteroid
+If you're hit, you lose:
+10 health for small asteroid
+15 health for medium asteroid
+20 health for large asteroid
     
-    If you lose all your health,
-    you lose a life and restart the level.
+If you lose all your health,
+you lose a life and restart the level.
     
-    CONTROLS:
-    UP: accelerate
-    DOWN: reverse
-    LEFT/RIGHT: turn
-    SPACE: shoot
+CONTROLS:
+UP: accelerate
+DOWN: reverse
+LEFT/RIGHT: turn
+SPACE: shoot
     
-    >>PRESS ENTER TO START<<");
+>>PRESS ENTER TO START<<");
     break;
 case rm_win:
     set_text_style(fnt_head, c_lime, fa_center);

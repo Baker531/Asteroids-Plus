@@ -9,6 +9,6 @@ part_type_size(partExhaust, 1, 1, 0, 0);
 part_type_color_mix(partExhaust, c_red, #ff6969);
 part_type_alpha2(partExhaust, 1, 0);
 part_type_direction(partExhaust, -20, 20, 0, 0);
-part_type_speed(partExhaust, 1, 2, 0, 0)
+part_type_speed(partExhaust, 1, 2, 0, 0);
 part_type_life(partExhaust, 8, 15);
 global.partExhaust = partExhaust;

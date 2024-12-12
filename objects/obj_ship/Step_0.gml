@@ -16,8 +16,9 @@ if (keyboard_check(vk_left)) {
     image_angle -= turning_speed;
 } if (keyboard_check(vk_up)) {
     motion_add(image_angle, ACCELERATION);
-    var off = offset(0, -13, image_angle);
-    part_particles_create(obj_particles.partSys, x+off[0], y+off[1], obj_particles.partExhaust, 1);    
+    var off = offset(0, -12, image_angle);
+	part_type_direction(global.partExhaust, (image_angle+180)-20, (image_angle+180)+20, 0, 0);
+    part_particles_create(obj_particles.partSys, x+off[0], y+off[1], obj_particles.partExhaust, 2);    
 } if (keyboard_check(vk_down)) {
     motion_add(image_angle, -ACCELERATION);
 } 

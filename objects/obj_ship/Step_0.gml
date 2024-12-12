@@ -32,7 +32,7 @@ if (keyboard_check(vk_left)) {
 	for (var i = 0; i < 2; i++) {
 		
 		part_type_direction(global.partExhaust, image_angle-THRUST_ANGLE, image_angle+THRUST_ANGLE, 0, 0);
-	    repeat (2) {
+	    repeat (1) {
             var off = offset(-THRUST_OFFSET+(i*THRUST_OFFSET*2) + random_range(-REVTHRUST_SPREAD, REVTHRUST_SPREAD), 2, image_angle);
             part_particles_create(obj_particles.partSys, x+off[0], y+off[1], obj_particles.partExhaust, 1);
         }

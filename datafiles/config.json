@@ -105,7 +105,7 @@
             "frequency": 8,
 
             "speed": 2,
-            "damage": 20,
+            "damage": 30,
             "health": 100,
             "cameraShake": 6,
             "score": 500,

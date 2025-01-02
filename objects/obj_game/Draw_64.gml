@@ -6,7 +6,7 @@ switch(room) {
 case rm_game:
     //set_text_style(fnt_hud, c_white, fa_left);
     scribble("[fnt_hud]SCORE: " + string(score)).draw(20, 20);
-    draw_text(20, 40, "LEFT: " + string(max(global.scoreRequired-global.levelScore, 0)));
+    scribble("[fnt_hud]LEFT: " + string(max(global.scoreRequired-global.levelScore, 0))).draw(20, 40);
     
     var _health = (obj_ship.hp/obj_ship.max_hp)*100;
     draw_healthbar(
@@ -25,9 +25,9 @@ case rm_game:
     break;
     
 case rm_start:
-    scribble("[fnt_head][c_yellow][fa_center]ASTEROIDS").draw(room_width / 2, 30);
-    
-    .draw(room_width / 2, 80);
+    //scribble("[fnt_head][c_yellow][fa_center]ASTEROIDS").draw(room_width / 2, 20)
+    text.instructions.page(text.page).wrap(display_get_gui_width() - 60).draw(20, 8); //? Don't know why 8.
+    scribble("[c_lime][fa_bottom]Press Enter to continue").draw(20, display_get_gui_height() - 12)
     break;
 case rm_win:
     set_text_style(fnt_head, c_lime, fa_center);
@@ -36,7 +36,7 @@ case rm_win:
     break;
 case rm_gameover:
     set_text_style(fnt_head, c_red, fa_center);
-    draw_text_(room_width / 2, 150, "GAME OVER");
+    draw_text(room_width / 2, 150, "GAME OVER");
     
     set_text_style(fnt_main, c_white)
     draw_text(room_width / 2, 250, "FINAL SCORE: " + string(score));

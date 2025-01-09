@@ -3,7 +3,7 @@ Get 1000 points to win the level!
 Each level, points to win goes up by 200.
 
 AIM: Destroy enemies and asteroids. Grab powerups to help.
- Rack up as many points as possible to win!
+Rack up as many points as possible to win!
 
 [c_lime]Press Enter to skip tutorial[/]
 [/page][fnt_head][c_yellow]Powerups[/]

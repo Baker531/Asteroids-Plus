@@ -34,4 +34,4 @@ dead = false;
 image_speed = 0;
 
 
-show_debug_overlay()
+show_debug_overlay(false)

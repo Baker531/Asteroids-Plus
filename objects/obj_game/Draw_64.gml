@@ -27,7 +27,7 @@ case rm_game:
 case rm_start:
     //scribble("[fnt_head][c_yellow][fa_center]ASTEROIDS").draw(room_width / 2, 20)
     text.instructions.page(text.page).wrap(display_get_gui_width() - 60).draw(20, 8); //? Don't know why 8.
-    scribble("[c_lime][fa_bottom]Press Enter to continue").draw(20, display_get_gui_height() - 12)
+    scribble("[c_lime][fa_bottom]Press Space to continue").draw(20, display_get_gui_height() - 12)
     break;
 case rm_win:
     set_text_style(fnt_head, c_lime, fa_center);

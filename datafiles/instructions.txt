@@ -3,6 +3,8 @@ Get 1000 points to win the level!
 Each level, points to win goes up by 200.
 
 AIM: Destroy enemies and asteroids.
+
+[c_lime]Press Enter to skip tutorial[/]
 [/page][fnt_head][c_yellow]Powerups[/]
 Sometimes, hitting an asteroid gives you a powerup. Hitting an asteroid has a 10% chance and hitting an enemy has a 25% chance to drop a random powerup. Collect it quick! They disappear in 5 seconds. The powerups are:
 

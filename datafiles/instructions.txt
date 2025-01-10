@@ -27,7 +27,7 @@ Raider: The basic enemy. Can be destroyed in one shot. Fires bullets.
 
 Hunter: Rather keen on dodging. Loves to evade you. Shoots fast bullets.
 
-Brute: Tough. Has 50hp. It doesn’t shoot, but instead follows you.
+Brute: Tough. Has 50hp. It doesn't shoot, but instead follows you.
 [/page][fnt_head][c_yellow]Enemies[/]
 Gunner: The machine-gun enemy. Fires lots of weak bullets. Has 20hp. Wipe it out quick.
 
@@ -35,7 +35,7 @@ Tank: The heaviest. Fires 20-damage bullets infrequently. Avoid. If you ram them
 [/page][fnt_head][c_yellow]Asteroids[/]
 The game is built around asteroids. So they deserve a mention.
 
-When an asteroid is hit, it breaks in two. Unless, of course, it’s a small one.
+When an asteroid is hit, it breaks in two. Unless, of course, it's a small one.
 
 When you smash into an asteroid, you lose:
 10 Health for small

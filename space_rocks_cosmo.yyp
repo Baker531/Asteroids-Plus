@@ -1,6 +1,6 @@
 {
   "$GMProject":"",
-  "%Name":"space_rocks_cosmo",
+  "%Name":"Asteroids_Plus",
   "AudioGroups":[
     {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],

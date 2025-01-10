@@ -9,6 +9,10 @@ view_visible[0] = true;
 
 camera_set_view_size(view_camera[0], cameraWidth, cameraHeight);
 #endregion
+#region display
+displayScale = 2.5;
+displayWidth = cameraWidth * displayScale;
+displayHeight = cameraHeight * displayScale;
 
 
 display_set_gui_size(cameraWidth, cameraHeight);

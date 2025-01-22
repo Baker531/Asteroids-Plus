@@ -29,9 +29,8 @@ with (obj_renderer) {
         show_debug_message(instance_exists(obj_pause_menu))
         with (obj_pause_menu) {
             show_debug_message("Pausing");
+            alarm[0] = 5;
             instance_deactivate_all(true);
-            running = true;
-            show_debug_message("Confirmed pause");
         } 
     }
 }

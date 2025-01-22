@@ -1,6 +1,6 @@
 {
   "$GMProject":"",
-  "%Name":"space_rocks_cosmo",
+  "%Name":"Asteroids_Plus",
   "AudioGroups":[
     {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
@@ -61,7 +61,7 @@
   "MetaData":{
     "IDEVersion":"2024.11.0.179",
   },
-  "name":"space_rocks_cosmo",
+  "name":"Asteroids_Plus",
   "resources":[
     {"id":{"name":"fnt_head","path":"fonts/fnt_head/fnt_head.yy",},},
     {"id":{"name":"fnt_hud","path":"fonts/fnt_hud/fnt_hud.yy",},},
@@ -82,7 +82,9 @@
     {"id":{"name":"obj_par_enemy","path":"objects/obj_par_enemy/obj_par_enemy.yy",},},
     {"id":{"name":"obj_par_ship","path":"objects/obj_par_ship/obj_par_ship.yy",},},
     {"id":{"name":"obj_particles","path":"objects/obj_particles/obj_particles.yy",},},
+    {"id":{"name":"obj_pause_menu","path":"objects/obj_pause_menu/obj_pause_menu.yy",},},
     {"id":{"name":"obj_powerup","path":"objects/obj_powerup/obj_powerup.yy",},},
+    {"id":{"name":"obj_renderer","path":"objects/obj_renderer/obj_renderer.yy",},},
     {"id":{"name":"obj_ship","path":"objects/obj_ship/obj_ship.yy",},},
     {"id":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},
     {"id":{"name":"rm_gameover","path":"rooms/rm_gameover/rm_gameover.yy",},},

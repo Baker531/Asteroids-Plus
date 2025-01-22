@@ -1,0 +1,1 @@
+scribble("[fnt_head][c_yellow]Paused").draw(50, 50)

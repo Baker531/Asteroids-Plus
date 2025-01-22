@@ -9,6 +9,8 @@ case rm_game:
     scribble("[fnt_hud]LEFT: " + string(max(global.scoreRequired-global.levelScore, 0))).draw(20, 40);
     
     var _health = (obj_ship.hp/obj_ship.max_hp)*100;
+    if (global.paused) {
+    old_health = _health
     draw_healthbar(
         180, 20, 320, 30, _health,
         c_white, c_red, c_lime, 0, true, false

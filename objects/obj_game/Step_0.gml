@@ -30,7 +30,6 @@ with (obj_renderer) {
         with (obj_pause_menu) {
             show_debug_message("Pausing");
             instance_deactivate_all(true);
-            instance_activate_object(obj_renderer)
             running = true;
             show_debug_message("Confirmed pause");
         } 

@@ -22,4 +22,15 @@ if (keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space)) {
         game_restart();
         break
     }
+} 
+if (keyboard_check_pressed(ord("P"))) {
+    show_debug_message("Paused")
+    show_debug_message(instance_exists(obj_pause_menu))
+    with (obj_pause_menu) {
+        show_debug_message("Pausing")
+        instance_deactivate_all(true);
+        instance_activate_object(obj_game)
+        running = true;
+        show_debug_message("Confirmed pause")
+    } 
 }

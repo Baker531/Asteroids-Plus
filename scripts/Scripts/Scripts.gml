@@ -56,7 +56,7 @@ function increaseScore(by) {
 }
 
 function displayLevel() {
-    obj_game.nextLevelAlpha = 1;
+    obj_renderer.nextLevelAlpha = 1;
     global.levelDisplay = true;
-    with (obj_alarms) alarm[0] = obj_game.textDuration;
+    with (obj_alarms) alarm[0] = obj_renderer.textDuration;
 }

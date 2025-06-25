@@ -11,8 +11,8 @@
   "name":"obj_asteroid",
   "overriddenProperties":[],
   "parent":{
-    "name":"Neutral",
-    "path":"folders/Objects/Neutral.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":{
     "name":"obj_faction_neutral",

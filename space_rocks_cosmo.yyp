@@ -1,6 +1,6 @@
 {
   "$GMProject":"",
-  "%Name":"Asteroids_Plus",
+  "%Name":"space_rocks_cosmo",
   "AudioGroups":[
     {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
@@ -61,7 +61,7 @@
   "MetaData":{
     "IDEVersion":"2024.11.0.179",
   },
-  "name":"Asteroids_Plus",
+  "name":"space_rocks_cosmo",
   "resources":[
     {"id":{"name":"fnt_head","path":"fonts/fnt_head/fnt_head.yy",},},
     {"id":{"name":"fnt_hud","path":"fonts/fnt_hud/fnt_hud.yy",},},

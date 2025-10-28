@@ -27,30 +27,9 @@ case rm_game:
     break;
     
 case rm_start:
-    set_text_style(fnt_head, c_yellow, fa_center);
-    draw_text(room_width / 2, 30, "ASTEROIDS");
-    
-    set_text_style(fnt_main, c_white);
-    draw_text(room_width / 2, 80, 
-    @"Get 1000 points to win the level!
-Each level, points to win goes up by 200.
-AIM: Destroy enemies and asteroids.
-    
-If you're hit, you lose:
-10 health for small asteroid
-15 health for medium asteroid
-20 health for large asteroid
-    
-If you lose all your health,
-you lose a life and restart the level.
-    
-CONTROLS:
-UP: accelerate
-DOWN: reverse
-LEFT/RIGHT: turn
-SPACE: shoot
-    
->>PRESS ENTER TO START<<");
+    text.instructions.page(text.page).wrap(display_get_gui_width() - 60).draw(20, 8); //? Don't know why 8.
+    set_text_style(fnt_main, c_lime, fa_bottom)
+    draw_text(20, display_get_gui_height() - 16, "Press Space to continue")
     break;
 case rm_win:
     set_text_style(fnt_head, c_lime, fa_center);

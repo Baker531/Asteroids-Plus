@@ -1,12 +1,13 @@
-[fa_top][fnt_head][c_yellow]Overview[/]
+[Overview]
 Get 1000 points to win the level!
 Each level, points to win goes up by 200.
 
 AIM: Destroy enemies and asteroids. Grab powerups to help.
 Rack up as many points as possible to win!
 
-[c_lime]Press Enter to skip tutorial[/]
-[/page][fnt_head][c_yellow]Powerups[/]
+*Press Enter to skip tutorial*
+
+[Powerups]
 Sometimes, hitting an asteroid gives you a powerup. Hitting an asteroid has a 10% chance and hitting an enemy has a 25% chance to drop a random powerup. Collect it quick! They disappear in 5 seconds. The powerups are:
 
 Two guns: Two forward-facing guns.
@@ -14,13 +15,13 @@ Two guns: Two forward-facing guns.
 Three guns: Three forward-facing guns.
 
 Four guns: Bullets go out from all points of the compass.
-[/page][fnt_head][c_yellow]Powerups[/]
+[Powerups]
 Eight guns: Congrats! You just turned into an asteroid-killing machine! Bullets come out in a star formation.
 
 Laser: A powerful (if i can fix it) destroying beam of energy.
 
 Shield: Nothing can get close to you! You have a shield generator! Go headbutt some enemies.
-[/page][fnt_head][c_yellow]Enemies[/]
+[Enemies]
 There's lots of enemies in asteroids plus.
 
 Raider: The basic enemy. Can be destroyed in one shot. Fires bullets.
@@ -28,11 +29,11 @@ Raider: The basic enemy. Can be destroyed in one shot. Fires bullets.
 Hunter: Rather keen on dodging. Loves to evade you. Shoots fast bullets.
 
 Brute: Tough. Has 50hp. It doesn't shoot, but instead follows you.
-[/page][fnt_head][c_yellow]Enemies[/]
+[Enemies]
 Gunner: The machine-gun enemy. Fires lots of weak bullets. Has 20hp. Wipe it out quick.
 
 Tank: The heaviest. Fires 20-damage bullets infrequently. Avoid. If you ram them, you lose 30hp.
-[/page][fnt_head][c_yellow]Asteroids[/]
+[Asteroids]
 The game is built around asteroids. So they deserve a mention.
 
 When an asteroid is hit, it breaks in two. Unless, of course, it's a small one.
@@ -43,7 +44,7 @@ When you smash into an asteroid, you lose:
 20 Health for large
 
 When you hit an asteroid, you get 50 points.
-[/page][fnt_head][c_yellow]Death and controls[/]
+[Death and controls]
 When you lose all your health,
 you lose a life and restart the level.
     
@@ -53,4 +54,4 @@ DOWN: reverse
 LEFT/RIGHT: turn
 SPACE: shoot
     
->>PRESS ENTER TO START<<
+*PRESS ENTER TO START*

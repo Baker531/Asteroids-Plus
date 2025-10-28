@@ -19,13 +19,7 @@ global.levelDisplay = false;
 #endregion
 
 #region global toolkit
-function set_text_style(font, color) {
-    draw_set_font(font);
-    draw_set_color(color);
-    if (argument_count == 3) {
-        draw_set_halign(argument[2])
-    }
-}
+
 
 #endregion
 

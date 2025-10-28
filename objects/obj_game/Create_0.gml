@@ -57,4 +57,3 @@ enum pwup {
 randomize()
 
 displayLevel()
-

@@ -5,7 +5,7 @@ with (obj_renderer) {
         switch(room) {
         case rm_start:
             if (nextDown) {
-            if (text.instructions.on_last_page()) {
+            if (text.page > text.pages) {
                 room_goto(rm_game); 
             }
             else {

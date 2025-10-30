@@ -73,6 +73,7 @@
     {"id":{"name":"rm_start","path":"rooms/rm_start/rm_start.yy",},},
     {"id":{"name":"rm_win","path":"rooms/rm_win/rm_win.yy",},},
     {"id":{"name":"Bullet","path":"scripts/Bullet/Bullet.yy",},},
+    {"id":{"name":"Instructions","path":"scripts/Instructions/Instructions.yy",},},
     {"id":{"name":"Scripts","path":"scripts/Scripts/Scripts.yy",},},
     {"id":{"name":"Utils","path":"scripts/Utils/Utils.yy",},},
     {"id":{"name":"spr_asteroid_big","path":"sprites/spr_asteroid_big/spr_asteroid_big.yy",},},

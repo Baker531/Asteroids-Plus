@@ -8,6 +8,14 @@ function debris(number, debris_speed, debris_variance){
     }
 }
 
+function set_text_style(font, color) {
+    draw_set_font(font);
+    draw_set_color(color);
+    if (argument_count == 3) {
+        draw_set_halign(argument[2])
+    }
+}
+
 function spawn_obj(obj, num, radius) {
     repeat(num) {
         var xx, yy;

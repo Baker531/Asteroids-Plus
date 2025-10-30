@@ -27,8 +27,9 @@ case rm_game:
     break;
     
 case rm_start:
-    text.instructions.page(text.page).wrap(display_get_gui_width() - 60).draw(20, 8); //? Don't know why 8.
-    set_text_style(fnt_main, c_lime, fa_bottom)
+    parse_text(text.instructions, text.page)
+    set_text_style(fnt_main, c_lime)
+    draw_set_valign(fa_bottom)
     draw_text(20, display_get_gui_height() - 16, "Press Space to continue")
     break;
 case rm_win:

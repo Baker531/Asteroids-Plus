@@ -46,6 +46,7 @@
     {"name":"rm_start","order":2,"path":"rooms/rm_start/rm_start.yy",},
     {"name":"rm_win","order":1,"path":"rooms/rm_win/rm_win.yy",},
     {"name":"Bullet","order":2,"path":"scripts/Bullet/Bullet.yy",},
+    {"name":"Instructions","order":3,"path":"scripts/Instructions/Instructions.yy",},
     {"name":"Utils","order":1,"path":"scripts/Utils/Utils.yy",},
     {"name":"spr_asteroid_med","order":1,"path":"sprites/spr_asteroid_med/spr_asteroid_med.yy",},
     {"name":"spr_asteroid_small","order":2,"path":"sprites/spr_asteroid_small/spr_asteroid_small.yy",},
